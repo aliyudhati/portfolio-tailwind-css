@@ -8,7 +8,6 @@
   </head>
   <body>
     <!-- Header Start -->
-    <!-- TODO:1.20.00 Membuat Website Portfolio Menggunakan TAILWINDCSS 3 | NGOBAR #32 -->
 
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
@@ -25,7 +24,7 @@
               id="hamburger"
               name="hamburger"
               type="button"
-              class="block absolute right-4"
+              class="block absolute right-4 lg:hidden"
             >
               <span
                 class="hamburger-line transition duration-300 ease-in-out origin-top-left"
@@ -40,21 +39,50 @@
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
             >
-              <ul class="block">
+              <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-dark py-2 mx-8 group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >Beranda</a
+                  >
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Tentang</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#home"
-                    class="text-base text-dark py-2 mx-8 group-hover:text-primary"
-                    >Beranda</a
+                    href="#portofolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
                   >
                 </li>
               </ul>
@@ -175,6 +203,24 @@
       </div>
     </section>
     <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <!-- TODO: 1.32.12 -->
+    <section id="portfolio" class="pt-36 pb-16">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-wl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4">
+              <p class="font-medium text-md text-secondary">
+                Dibawah ini adalah project-project yang saya buat sendiri
+              </p>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
 
     <script src="dist/js/script.js"></script>
   </body>
